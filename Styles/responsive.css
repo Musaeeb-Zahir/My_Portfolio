@@ -1,7 +1,13 @@
 @media (max-width: 768px) {
   /* Ye styles tab apply honge jab screen 768px ya us se chhoti ho */
-  body {
-    background-color: hotpink;
-  }
+ .logo{
+   display: none;
+ }
+ #mobile-menu{
+   display: block;
+ }
+.nav{
+  flex-direction: column;
+} 
 
 }
