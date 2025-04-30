@@ -46,6 +46,7 @@ header {
   width: 100%;
 }
 nav {
+  width: 100%;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 15px;
@@ -83,6 +84,7 @@ nav {
 }
 /* hero section */
 .hero-section {
+  width: 100%;
   min-height: calc(100vh - 82.18px);
   display: flex;
   align-items: center;
@@ -93,12 +95,12 @@ nav {
 
 .hero-container {
   justify-content: center;
-  max-width: 100%;
   margin: 0 auto;
   display: flex;
   text-align: center;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 
 /* Hero Image */
