@@ -4,17 +4,33 @@
     display: none;
   }
   #mobile-menu {
+    display: block !important;
+  }
+  .cross {
     display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .hamberger {
+    display: block !important;
+    position: absolute;
+    width: 30px;
+    top: 34px;
+    left: 30px;
   }
   .nav-links {
     flex-direction: column;
-    gap: 12px;
+    gap: 12px !important;
     width: 70%;
     height: 100vh;
+    background-color: rgb(19, 26, 24);
     position: absolute;
     top: 0;
     left: 0;
-    padding: 50px;
-    gap: 31px;
+    padding: 90px 30px !important;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
   }
 }
