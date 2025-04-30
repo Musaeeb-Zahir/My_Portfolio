@@ -1,14 +1,45 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="Styles/styles.css">
+
+  <title>Portfolio</title>  
 </head>
-
 <body>
-  
+  <header>
+    <nav class="navbar">
+      <div class="logo">My Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="hamberger fa-solid fa-bars"></i>
+        <i class=" cross fa-solid fa-xmark"></i>
+    </nav>
+  </header>
+  <!-- Hero section-->
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-image">
+        <img src="path-to-your-image.jpg" alt="Your Image" />
+      </div>
+      <div class="hero-name">
+        <h1>Your Name</h1>
+      </div>
+      <div class="hero-text">
+        <p>Welcome to my portfolio! I am a [Your Profession/Title].</p>
+      </div>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn">Get in Touch</a>
+        <a href="path-to-your-cv.pdf" class="btn" download>Download CV</a>
+      </div>
+    </div>
+  </section>
 </body>
-
 </html>

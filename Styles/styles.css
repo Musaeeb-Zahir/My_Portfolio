@@ -1,0 +1,80 @@
+/* CSS Document */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --hero-heading-color: #ff8660;
+  --text-gradient-color: linear-gradient(
+    149deg,
+    rgba(195, 85, 192, 1) 25%,
+    rgba(255, 134, 96, 1) 100%
+  );
+  --cardbackground-color-gradient: linear-gradient(
+    to right bottom,
+    #151932,
+    #191e3c,
+    #1e2446,
+    #222950,
+    #272f5b,
+    #272f5b,
+    #272f5b,
+    #272f5b,
+    #222950,
+    #1e2446,
+    #191e3c,
+    #151932
+  );
+  --header-background-color: #1e1e1d;
+  --experience-background-color: #04071d;
+  --technologies-background-color: #07091f;
+  --golive-textbtn-color: #9d86bf;
+  --experience-text-color: #bec1dd;
+  --heading-text-color: #ffffff;
+  --background-color: #161513;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+header {
+  height: 82.18px;
+}
+nav {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  font-style: normal;
+  height: 82.18px;
+  gap: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--header-background-color);
+  padding: 10px 200px;
+  color: white;
+}
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 90px;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+}
+#mobile-menu {
+  display: none;
+}
