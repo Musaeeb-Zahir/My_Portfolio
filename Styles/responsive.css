@@ -6,12 +6,13 @@
   #mobile-menu {
     display: block !important;
   }
-  .cross {
-    display: block;
-    cursor: pointer;
+.cross {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    width: 30px;
+    z-index: 33;
+    top: 34px;
+    filter: invert(1);
+    left: 30px;
   }
   .hamberger {
     display: block !important;
