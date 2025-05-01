@@ -21,6 +21,9 @@
     top: 34px;
     left: 30px;
   }
+  .navbar {
+    padding: 0% !important;
+  }
   .nav-links {
     flex-direction: column;
     gap: 12px !important;
