@@ -205,24 +205,27 @@ header {
 }
 
 .projects-container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 100px;
 }
 
 /* Project Card */
 .project-box {
+  width: 40%;
   border-radius: 15px;
-  width: 410px;
+  /* width: 410px; */
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: start;
 }
 .inner-box {
+  width: 100%;
   background-image: var(--cardbackground-color-gradient);
-  width: 410px;
   border-radius: 15px;
   height: 200px;
   display: flex;
