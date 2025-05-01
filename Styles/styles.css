@@ -30,7 +30,7 @@
   );
   --header-background-color: #1e1e1d;
   --experience-background-color: #04071d;
-  --technologies-background-color: #07091f;
+  --technologies-background-color: #0d1037;
   --golive-textbtn-color: #9d86bf;
   --experience-text-color: #bec1dd;
   --heading-text-color: #ffffff;
@@ -277,10 +277,10 @@ header {
 /* Font Awesome Icons */
 .project-skills i {
   font-size: 1.5rem;
-  padding:18px;
+  padding: 18px;
   border-radius: 50%;
 
-background-image: var(--cardbackground-color-gradient);
+  background-color: var(--technologies-background-color);
   transition: background-color 0.3s, color 0.3s;
 }
 
