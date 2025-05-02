@@ -335,6 +335,11 @@ a {
   margin-bottom: 40px;
   color: #ff8660; /* heading color from your theme */
 }
+.about-exp p {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  color: var(--experience-text-color);
+}
 .experience-section h2 span {
   background: linear-gradient(
     149deg,
@@ -397,7 +402,8 @@ a {
 }
 
 .education-box p {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  margin-top: 5px;
   color: var(--experience-text-color);
 }
 
