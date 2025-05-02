@@ -326,7 +326,6 @@ a {
   padding: 20px;
   display: flex;
   flex-direction: row;
-  align-items: start;
   gap: 30px;
 }
 .experience-section h2 {
@@ -391,6 +390,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 15px;
   height: 390px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

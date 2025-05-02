@@ -44,9 +44,16 @@
     gap: 20px;
     padding: 0px;
   }
+  .inner-box {
+    height: 270px !important;
+  }
   .project-box {
     width: 100%;
     padding: 5px;
+  }
+  .project-image {
+    transform: none;
+    height: 220px;
   }
   .project-image img {
     object-fit: fill;
@@ -59,6 +66,7 @@
   }
   .experience-box {
     width: 100%;
+    align-items: center;
   }
   /* education  */
   .education-container {
@@ -77,5 +85,8 @@
   .education-details {
     font-size: 1rem;
     text-align: justify;
+  }
+  .about-edu {
+    text-align: center;
   }
 }
