@@ -6,12 +6,12 @@
   #mobile-menu {
     display: block;
   }
-  .cross {
+  .cross-div {
+    display: block !important;
     position: fixed;
     width: 30px;
     color: white;
     top: 34px;
-    filter: invert(1) !important;
     left: 30px;
   }
   .hamberger {
