@@ -5,7 +5,12 @@ const projects = [
     name: "E-commerce Website",
     description:
       "An e-commerce website showcasing a collection of techwear clothing and accessories.",
-    technologies: ["fa-html5", "fa-css3-alt", "fa-js"],
+    technologies: [
+      '<i class="fa-brands fa-react" style="color: #74C0FC;"></i>',
+      '<i class="fa-brands fa-js" style="color:rgb(217, 224, 32);"></i>',
+      '<i class="fa-brands fa-bootstrap" style="color: #9a9ee9;"></i>',
+      '<i class="fa-brands fa-css3-alt" style="color: #74C0FC;"></i>',
+    ],
     link: "https://techwearcollection.netlify.app/",
   },
   {
@@ -14,7 +19,12 @@ const projects = [
     name: "Stock image website",
     description:
       "A stock image website that allows users to search and download high-quality images using Unsplash API.",
-    technologies: ["fa-html5", "fa-css3-alt", "fa-js"],
+    technologies: [
+      '<i class="fa-brands fa-react" style="color: #74C0FC;"></i>',
+      '<i class="fa-brands fa-unsplash" style="color: #74C0FC;"></i>',
+      '<i class="fa-brands fa-bootstrap" style="color: #9a9ee9;"></i>',
+      '<i class="fa-brands fa-css3-alt" style="color: #74C0FC;"></i>',
+    ],
     link: "https://pichubsite.netlify.app/",
   },
 ];
@@ -36,9 +46,11 @@ projects.forEach((project) => {
         <!-- Skills and Live Link -->
         <div class="project-skills">
           <div class="icon-box">
-          <i class="fab ${project.technologies[0]}"></i>
-          <i class="fab ${project.technologies[1]}"></i>
-          <i class="fab ${project.technologies[2]}"></i></div>
+          ${project.technologies[0]}
+          ${project.technologies[1]}
+          ${project.technologies[2]}
+          ${project.technologies[3]}
+          </div>
           <div class="live-btn">
           <a href=${project.link} target="_blank" class="btn">
             <button class="live-link-btn">Check Live <img src="Assets/img/right-up.png" alt=""></button>

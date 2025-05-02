@@ -214,7 +214,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 40px 100px;
 }
 
 /* Project Card */
@@ -271,26 +271,51 @@ header {
 /* Skills + Live Link */
 .project-skills {
   width: 100%;
+  height: 55px;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   gap: 12px;
   flex-wrap: wrap;
 }
 
 /* Font Awesome Icons */
+.icon-box {
+  position: relative;
+}
 .project-skills i {
+  position: absolute;
   font-size: 1.5rem;
   padding: 18px;
   border-radius: 50%;
-
-  background-color: var(--technologies-background-color);
+  width: 58px;
+  background: var(--cardbackground-color-gradient);
   transition: background-color 0.3s, color 0.3s;
+}
+.project-skills i:first-child {
+  top: auto;
+  left: 0;
+}
+
+.project-skills i:nth-child(2) {
+  top: auto;
+  left: 40px;
+  z-index: 8;
+}
+.project-skills i:nth-child(3) {
+  top: auto;
+  left: 77px;
+  z-index: 9;
+}
+.project-skills i:nth-child(4) {
+  top: auto;
+  left: 112px;
+  z-index: 10;
 }
 
 /* Button */
 .live-link-btn {
-  padding: 8px 16px;
+  padding: 19px 16px;
   border: none;
   display: flex;
   align-items: center;
@@ -317,7 +342,7 @@ a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 40px 100px;
 }
 .experience-box {
   width: 40%;
