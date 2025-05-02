@@ -6,10 +6,10 @@
   #mobile-menu {
     display: block;
   }
-   .cross {
+  .cross {
     position: fixed;
     width: 30px;
-    color: white ;
+    color: white;
     top: 34px;
     filter: invert(1) !important;
     left: 30px;
@@ -51,14 +51,31 @@
   .project-image img {
     object-fit: fill;
   }
-  
-  
-.experience-container {
-  flex-direction: row;
-  padding:10px;
-  gap: 50px;
-}
-.experience-box{
-  width:100%;
-}
+
+  .experience-container {
+    flex-direction: row;
+    padding: 10px;
+    gap: 50px;
+  }
+  .experience-box {
+    width: 100%;
+  }
+  /* education  */
+  .education-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+  .education-box {
+    width: 100%;
+    padding: 5px;
+  }
+  .education-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .education-details {
+    font-size: 1rem;
+    text-align: justify;
+  }
 }

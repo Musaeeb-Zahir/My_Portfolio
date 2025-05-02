@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 :root {
@@ -89,7 +89,7 @@ header {
   cursor: pointer;
   filter: invert(1);
 }
-.cross-div{
+.cross-div {
   display: none;
   cursor: pointer;
   color: white !important;
@@ -316,7 +316,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   gap: 100px;
 }
 .experience-box {
@@ -343,4 +343,195 @@ a {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* education section */
+.education-section {
+  padding: 60px 20px;
+  background-color: #161513; /* matches your theme color */
+  color: white;
+}
+
+.education-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ff8660; /* heading color from your theme */
+}
+
+.education-section h2 span {
+  background: linear-gradient(
+    149deg,
+    rgba(195, 85, 192, 1) 25%,
+    rgba(255, 134, 96, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.education-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.education-box {
+  width: 40%;
+  border-radius: 15px;
+  background-color: var(--experience-background-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.education-box h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.education-box p {
+  font-size: 1rem;
+  color: var(--experience-text-color);
+}
+
+.education-box .education-duration {
+  font-size: 0.9rem;
+  color: #9d86bf;
+  font-style: italic;
+}
+/* footer section */
+.footer-section {
+  background: var(--header-background-color);
+  color: var(--experience-text-color);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+.footer-column,
+.footer-column2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1rem;
+}
+.footer-column3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1rem;
+}
+.footer-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #333;
+  margin: 0 auto;
+}
+.footer-column h3,
+.footer-column2 h3 {
+  color: var(--hero-heading-color);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.footer-column3 h3 {
+  color: var(--hero-heading-color);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  margin-top: 37px;
+}
+.footer-column p,
+.footer-column a,
+.footer-column2 p,
+.footer-column2 a {
+  color: var(--experience-text-color);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+.footer-column p i {
+  margin-right: 5px;
+  font-size: 1.1rem;
+}
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.social-icons a {
+  margin-right: 1rem;
+  display: flex;
+  gap: 10px;
+  font-size: 1.2rem;
+  color: var(--golive-textbtn-color);
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--hero-heading-color);
+}
+.footer-column3 {
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 0.75rem;
+  padding: 0.6rem;
+  color: #fff;
+  border-bottom: 1px solid var(--hero-heading-color);
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.contact-form input,
+.contact-form textarea:focus {
+  outline: none;
+  border-bottom: 1px solid var(--hero-heading-color);
+}
+.send-btn {
+  background: var(--hero-heading-color);
+  color: var(--header-background-color);
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.send-btn:hover {
+  background: var(--hero-heading-color);
+}
+
+.back-to-top {
+  margin-top: 2rem;
+}
+
+.back-to-top a {
+  font-size: 1rem;
+  color: var(--hero-heading-color);
+  transition: transform 0.3s ease;
+}
+
+.back-to-top a:hover {
+  transform: translateY(-5px);
 }
