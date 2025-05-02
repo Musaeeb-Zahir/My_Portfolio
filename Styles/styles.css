@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 :root {
   --hero-heading-color: #ff8660;
   --text-gradient-color: linear-gradient(
@@ -86,9 +89,10 @@ header {
   cursor: pointer;
   filter: invert(1);
 }
-.cross {
+.cross-div{
   display: none;
   cursor: pointer;
+  color: white !important;
 }
 /* hero section */
 .hero-section {
@@ -300,4 +304,43 @@ header {
 }
 a {
   text-decoration: none;
+}
+
+.experience-section {
+  padding: 60px 20px;
+  background-color: #161513; /* aapki existing theme color */
+  color: white;
+}
+.experience-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  gap: 100px;
+}
+.experience-box {
+  width: 40%;
+  border-radius: 15px;
+  background-color: var(--experience-background-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 30px;
+}
+.experience-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ff8660; /* heading color from your theme */
+}
+.experience-section h2 span {
+  background: linear-gradient(
+    149deg,
+    rgba(195, 85, 192, 1) 25%,
+    rgba(255, 134, 96, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
