@@ -137,6 +137,13 @@ header {
 }
 
 /* Name */
+.hero-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 97px;
+}
 .hero-name h1 {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 800;
@@ -154,7 +161,23 @@ header {
   margin: 0;
   text-align: center;
 }
-
+.hero-name .change-txt {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  background: #c355c0;
+  background: linear-gradient(
+    149deg,
+    rgba(195, 85, 192, 1) 25%,
+    rgba(255, 134, 96, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin: 0;
+  text-align: center;
+}
 /* Welcome Text */
 .hero-text {
   display: flex;

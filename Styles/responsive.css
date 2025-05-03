@@ -38,11 +38,22 @@
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
   }
-  
-  .hero-text p{
-    width 100%;
+  .hero-name {
+    height: 82px;
+  }
+  .hero-name h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .hero-name h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .hero-text p {
+    width: 100%;
     font-size: 1rem;
-    padding: 0;
+    padding: 0px 0px 10px 0px;
+    text-align: center;
   }
   /* project section */
   .projects-container {
