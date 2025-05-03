@@ -51,7 +51,7 @@
     padding: 0px;
   }
   .inner-box {
-    height: 250px !important;
+    height: 200px !important;
   }
   .project-box {
     width: 100%;
@@ -59,7 +59,7 @@
   }
   .project-image {
     transform: none;
-    height: 190px;
+    height: 160px;
   }
   .project-image img {
     object-fit: fill;
