@@ -86,6 +86,10 @@
     width: 100%;
     align-items: center;
   }
+  .project-skills i {
+    font-size: 1rem;
+    width: 51px;
+  }
   /* education  */
   .education-container {
     flex-direction: column;
