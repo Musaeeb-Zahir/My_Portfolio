@@ -195,6 +195,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 20px;
+  margin-top: 15px;
   flex-wrap: wrap;
 }
 
@@ -218,11 +219,81 @@ header {
   font-weight: bold;
   cursor: pointer;
 }
+/* skill section */
+.skills-section {
+  padding: 60px 20px;
+  background-color: #161513;
+  color: white;
+}
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 20px;
+  text-align: center;
+}
+.skills-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ff8660;
+  background: linear-gradient(
+    149deg,
+    rgba(195, 85, 192, 1) 5%,
+    rgba(255, 134, 96, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.skill {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
 
+.circle-bg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  border-radius: 50% !important;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-inner {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #0e0e0e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-inner p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.percent {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.label {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
 /* project section */
 .projects-section {
   padding: 60px 20px;
-  background-color: #161513; /* aapki existing theme color */
+  background-color: #161513;
   color: white;
 }
 
