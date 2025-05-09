@@ -27,14 +27,15 @@
   .nav-links {
     flex-direction: column;
     z-index: 999;
-    gap: 12px;
+    gap: 36px;
     width: 70%;
+    font-size: large;
     height: 100vh;
     background-color: rgb(19, 26, 24);
     position: fixed;
     top: 0;
     left: 0;
-    padding: 90px 30px !important;
+    padding: 110px 30px !important;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
   }
