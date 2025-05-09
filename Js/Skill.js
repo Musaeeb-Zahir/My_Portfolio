@@ -45,7 +45,7 @@ skills.forEach((skill) => {
   const update = () => {
     if (current <= percent) {
       let deg = (current / 100) * 360;
-      circle.style.background = `conic-gradient( rgba(195, 85, 192, 1), rgba(255, 134, 96, 1) ${deg}deg, #2b2b2b ${deg}deg)`;
+      circle.style.background = `conic-gradient( rgba(195, 85, 191, 0.55), rgba(255, 133, 96, 0.90) ${deg}deg, #2b2b2b ${deg}deg)`;
 
       text.textContent = current + "%";
       current++;
