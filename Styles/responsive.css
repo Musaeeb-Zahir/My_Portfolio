@@ -57,6 +57,21 @@
     text-align: center;
     margin-top: 36px;
   }
+  /* Skill-section */
+  .skills-container {
+    gap: 65px;
+  }
+  .skill {
+    height: 90px;
+    width: 90px;
+  }
+  .circle-inner {
+    height: 67px;
+    width: 67px;
+  }
+  .percent {
+    font-size: 12px;
+  }
   /* project section */
   .projects-container {
     flex-direction: column;
