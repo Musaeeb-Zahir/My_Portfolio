@@ -127,4 +127,7 @@
   .about-edu {
     text-align: center;
   }
+  .light-dark-mode {
+    display: none;
+  }
 }
