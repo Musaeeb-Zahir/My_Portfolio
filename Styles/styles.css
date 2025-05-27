@@ -672,3 +672,12 @@ a {
 .back-to-top a:hover {
   transform: translateY(-5px);
 }
+
+.light-dark-mode {
+  position: fixed;
+  right: 34px;
+  padding: 7px;
+  background-color: var(--technologies-background-color);
+  bottom: 35px;
+  border-radius: 50%;
+}
