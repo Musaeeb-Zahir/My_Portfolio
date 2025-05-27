@@ -222,7 +222,7 @@ header {
 /* skill section */
 .skills-section {
   padding: 60px 20px;
-  background-color: #161513;
+  background-color: var(--background-color);
   color: white;
 }
 .skills-container {
@@ -293,7 +293,7 @@ header {
 /* project section */
 .projects-section {
   padding: 60px 20px;
-  background-color: #161513;
+  background-color: var(--background-color);
   color: white;
 }
 
@@ -438,7 +438,7 @@ a {
 
 .experience-section {
   padding: 60px 20px;
-  background-color: #161513; /* aapki existing theme color */
+  background-color: var(--background-color); /* aapki existing theme color */
   color: white;
 }
 .experience-container {
@@ -482,7 +482,7 @@ a {
 /* education section */
 .education-section {
   padding: 60px 20px;
-  background-color: #161513; /* matches your theme color */
+  background-color: var(--background-color); /* matches your theme color */
   color: white;
 }
 
