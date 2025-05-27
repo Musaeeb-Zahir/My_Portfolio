@@ -675,6 +675,7 @@ a {
 
 .light-dark-mode {
   position: fixed;
+  cursor: pointer;
   right: 34px;
   padding: 7px;
   background-color: var(--technologies-background-color);
