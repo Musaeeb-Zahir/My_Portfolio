@@ -41,7 +41,7 @@ projects.forEach((project) => {
         </div>
         <!-- Project Description -->
         <div class="project-description">
-          <p>${project.description}</p>
+          <p class="pro-para">${project.description}</p>
         </div>
         <!-- Skills and Live Link -->
         <div class="project-skills">
