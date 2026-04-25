@@ -349,7 +349,7 @@ header {
   background-color: #04071d;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
-  transform: skew(0.99turn, 360deg);
+  /* transform: skew(0.99turn, 360deg); */
 }
 .project-image img {
   width: 100%;
@@ -395,7 +395,9 @@ header {
   border-radius: 50%;
   width: 58px;
   background: var(--cardbackground-color-gradient);
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 .project-skills i:first-child {
   top: auto;
@@ -430,7 +432,9 @@ header {
   color: var(--golive-textbtn-color);
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 a {
   text-decoration: none;

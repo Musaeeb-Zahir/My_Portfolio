@@ -1,14 +1,9 @@
 const skillContainer = document.querySelector(".skills-container");
 const skillArr = [
   {
-    name: "HTML & CSS",
-    percent: 90,
-    icon: "<i class='bx bxl-html5'></i>",
-  },
-  {
-    name: "Tailwind CSS",
+    name: "React",
     percent: 75,
-    icon: "<i class='bx bxl-css3'></i>",
+    icon: "<i class='bx bxl-react'></i>",
   },
   {
     name: "JavaScript",
@@ -16,14 +11,19 @@ const skillArr = [
     icon: "<i class='bx bxl-javascript'></i>",
   },
   {
-    name: "React",
+    name: "Tailwind CSS",
     percent: 75,
-    icon: "<i class='bx bxl-react'></i>",
+    icon: "<i class='bx bxl-css3'></i>",
   },
   {
-    name: "Node.js",
-    percent: 70,
-    icon: "<i class='bx bxl-nodejs'></i>",
+    name: "Redux",
+    percent: 80,
+    icon: "<i class='bx bxl-redux'></i>",
+  },
+  {
+    name: "HTML & CSS",
+    percent: 90,
+    icon: "<i class='bx bxl-html5'></i>",
   },
 ];
 skillArr.forEach((skill, index) => {
