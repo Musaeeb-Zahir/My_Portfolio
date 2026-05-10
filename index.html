@@ -1,129 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="Assets/img/favicon.png" sizes="16x16" />
-  <meta name="google-site-verification" content="zLWT7FC78VHYmvVgFXm-P_InJ5eduT2AaG57YIQbL_8" />
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+   <link rel="icon" type="image/png" href="/public/favicon.png" />
+<link rel="icon" type="image/png" href="/public/favicon.png" sizes="any" /> 
+  <meta name="google-site-verification"   content="zLWT7FC78VHYmvVgFXm-P_InJ5eduT2AaG57YIQbL_8" />
   <meta name="description" content="Welcome to my portfolio! I'm a passionate computer science student with a strong foundation in HTML, CSS, and JavaScript. I'm currently exploring modern tools like React, Express, and Node.js to build dynamic and impactful web applications.">
-  <meta name="keywords" content="portfolio, web development, HTML, CSS, JavaScript, React, Express, Node.js">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  <link rel="stylesheet" href="Styles/styles.css">
-<link rel="stylesheet" href="styles/responsive.css" type="text/css" media="all" />
-  <title>Portfolio | Musaeeb Zahir</title>  
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">MZ</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li class="cross-div" style="color: white;"><i class=" cross fa-solid fa-x" style="color: #ffffff;"></i></i></li>
-      </ul>
-         
-      </nav>
-     
-      <i class="hamberger fa-solid fa-bars"></i>
-  </header>
-  <!-- Hero section-->
-  <section id="home" class="hero-section">
-      <div class="hero-image">
-        <img src="Assets/img/me.jpg" alt="Your Image" />
-      </div>
-      <div class="hero-name">
-        <h1> I'm Musaeeb Zahir</h1>
-        <h2 id="typed-text" class="change-txt"></h2>
-      </div>
-      <div class="hero-text">
-        <p class="hero-para">Welcome to my portfolio! I'm a passionate computer science student with a strong foundation in HTML, CSS, and JavaScript. I'm currently exploring modern tools like React, Express, and Node.js to build dynamic and impactful web applications.</p>
-      </div>
-      <div class="hero-buttons">
-        <a href="#contact" class="btn"><button class="get-in-touch-btn">Get in Touch</button></a>
-        <a href="Assets/file/cv.pdf" class="btn" download><button class="download-cv-btn">Download CV</button></a>
-      </div>
-    </div>
-  </section>
-  <!-- skill section -->
-  <section class="skills-section">
-    <h2>Skills</h2>
-    <div class="skills-container">  
-      
-  </div>
-  </section>
-  <section id="projects" class="projects-section">
-    <h2>A small selection of <span>recent projects</span> </h2>
-    <div class="projects-container">
-        
-    </div>
-  </section>
-  <section id="experience" class="experience-section">
-    <h2>My <span>Experience</span></h2>
-    <div class="experience-container">
-       
-    </div>
-  </section>
-  <section id="education" class="education-section">
-    <h2>My <span>Education</span></h2>
-    <div class="education-container">
-      <!-- Education Box 1 -->
-    </div>
-    
-  </section>
-  <footer id="contact" class="footer-section">
-    <div class="footer-container">
-      <div class="footer-column">
-        <div class="footer-image">
-          <img src="Assets/img/me.jpg" loading="lazy" alt="Your Image" />
-        </div>
-        <h3>Contact Me</h3>
-        <p><i class="fas fa-envelope"></i> musaeebzahir@gmail.com</p>
-        <p><i class="fas fa-phone"></i>0328-5701532</p>
-        <p><i class="fab fa-whatsapp"></i>0355-4218434</p>
-        <p><i class="fas fa-map-marker-alt"></i>Rawalpindi,pakistan</p>
-      </div>
-      
-      <div class="footer-column2">
-        <h3>Follow Me</h3>
-        <div class="social-icons">
-          <a href="https://github.com/Musaeeb-Zahir/" target="_blank"><i class="fab fa-github"></i><p>Github</p></a>
-          <a href="https://www.linkedin.com/in/musaeebzahir/" target="_blank"><i class="fab fa-linkedin"></i><p>Connect on LinkedIn</p></a>
-          <a href="https://www.facebook.com/musaeeb.mzahir" target="_blank"><i class="fab fa-facebook"></i><p>Connect on facebook</p></a>
-          <a href="https://twitter.com/musaeeb.mzahir" target="_blank"><i class="fab fa-twitter"></i><p>follow on twitter</p></a>
-
-        </div>
-      </div>
-  
-      <div class="footer-column3">
-        <h3>Send a Message</h3>
-        <form action="https://formspree.io/f/xvgakajn" method="POST" class="contact-form">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-          <button type="submit" class="send-btn">Send</button>
-        </form>
-      </div>
-    </div>
-  
-    <div class="back-to-top">
-      <a href="#home"><i class="fas fa-arrow-up"></i></a>
-    </div>
-    <!-- <img src="./Assets/img/light-dark-mode.png" class="light-dark-mode" alt="night-mode" width="45px"> -->
-  </footer>
-  
-  <script src="Js/script.js"></script>
-    <script src="Js/education.js"></script>
-    <script src="Js/experience.js"></script>
-    <script src="Js/projects.js"></script>
-    <script src="Js/Skill.js"></script>
-    <!-- <script src="Js/mode.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="Js/typingEffect.js"></script>  
-
-  
-</body>
+  <meta name="keywords" content="portfolio, web development, HTML, CSS, JavaScript, React, Express, Node.js ,nextjs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musaeeb Zahir</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
