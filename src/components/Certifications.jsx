@@ -1,7 +1,7 @@
 import { useState } from "react";
 import developerHub from "../assets/certifications/1.jpg";
 import smit from "../assets/certifications/2.jpg";
-
+import {motion} from "motion/react"
 function Certifications() {
     const [activeIndex, setActiveIndex] = useState(null);
   const certifications = [
@@ -31,15 +31,27 @@ function Certifications() {
   return (
     <section className="flex flex-col items-center py-10 w-full bg-primary relative">
      
-      <h2 className="font-nunito text-3xl md:text-4xl font-bold text-heading pb-8 z-10">
+        <motion.h2
+        initial={{ y: -10, opacity: 0, scale: 0.8 }}
+        whileInView={{
+          y: 0,
+          opacity: 1,
+          scale: 1,
+          transition: { duration: 0.4, ease: "easeInOut" },
+        }}
+        viewport={{ once: "true", amount: 0.3 }}
+        className="font-nunito text-4xl align-baseline font-bold text-heading pt-3 pb-1 mb-8"
+      >
         Certifications
-      </h2>
+      </motion.h2>
 
       <div className="flex flex-col md:flex-row gap-6 px-4 z-10">
 
         {certifications.map((item, index) => {
           const isActive = activeIndex === index;
-        return  <article
+        return  <motion.article
+           initial={{ opacity:0, scale:0.8 }} whileInView={{ opacity:1, scale:1 ,transition:{type:'spring',duration:0.4}}}
+          //  viewport={{once:"true"}}
             key={index}
             className="w-[90vw] md:w-90 md:h-90 relative group overflow-hidden rounded-xl shadow-md cursor-pointer"
              onClick={() => handleToggle(index)}
@@ -96,7 +108,7 @@ function Certifications() {
                   </span>
                 </div>
               )}
-          </article>}
+          </motion.article>}
         )}
       </div>
     </section>

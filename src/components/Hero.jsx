@@ -8,6 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import { IoMailOutline } from "react-icons/io5";
 import { FaFacebook } from "react-icons/fa";
 import cv from "../assets/cv.pdf";
+import { motion } from "motion/react";
 function Hero() {
   const canvasRef = useRef(null);
 
@@ -145,12 +146,26 @@ function Hero() {
       </a>
 
       <div className="relative z-10 flex flex-col justify-center gap-5 pl-7">
-        <h1 className="font-nunito font-black text-xl tracking-tight text-white tracking-wide md:text-5xl">
+        <motion.h1
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: { duration: 0.8, ease: "backOut" },
+          }}
+          viewport={{ once: "true" }}
+          className="font-nunito font-black text-xl tracking-tight text-white tracking-wide md:text-5xl"
+        >
           MUSAEEB ZAHIR
-        </h1>
-        <p className="text-sm text-white font-nunito italic md:text-[16px] ">
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 ,duration:0.4 }}
+          className="text-sm text-white font-nunito italic md:text-[16px] "
+        >
           Junior Web Developer React | JS | Tailwind | Redux
-        </p>
+        </motion.p>
         <div className="flex gap-4">
           <a href="#about" className="">
             {" "}
@@ -161,7 +176,9 @@ function Hero() {
           </a>
         </div>
       </div>
-      <img
+      <motion.img
+       animate={{ y:[0,-10,0] }} transition={{ repeat:Infinity, duration:2, 
+        ease:"easeInOut" }}
         src={myLogo}
         alt="logo"
         style={{ width: "400px", height: "400px" }}

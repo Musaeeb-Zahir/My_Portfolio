@@ -1,9 +1,25 @@
 import React from "react";
+import { motion, scale } from "motion/react";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 function ProjectCard({ project }) {
   return (
-    <article className="flex flex-col px-2 py-4 items-start h-full bg-[#D7D6D2] gap-3 rounded-xl relative shadow-xl md:shadow-xl md:w-[25%] md:h-[600px] md:justify-start cursor-pointer transition-all duration-150 hover:shadow-2xl hover:shadow-gray-400 hover:scale-101">
-      <img src={project?.img} alt="" className="w-[100%] rounded-2xl z-10 hover:scale-101 transition-all duration-150"/>
+    <motion.article
+      className="flex flex-col px-2 py-4 items-start h-full bg-[#D7D6D2] gap-3 rounded-xl relative shadow-xl md:shadow-xl md:w-[25%] md:h-[600px] md:justify-start cursor-pointer transition-all duration-150 "
+      initial={{ opacity: 0, scale:0.8 }}
+      whileInView={{ opacity: 1, scale: 1 ,transition:{duration:0.3,ease:"easeInOut"}}}
+      transition={{ staggerChildren: 0.2}}
+      whileHover={{ y: -8, scale: 1.02}}
+      whileTap={{scale:0.95}}
+      viewport={{
+        amount:0.3,
+        once:"true"
+      }}
+    >
+      <img
+        src={project?.img}
+        alt=""
+        className="w-[100%] rounded-2xl z-10 hover:scale-101 transition-all duration-150"
+      />
       <div className="flex flex-col px-2 gap-2">
         <h3
           className="font-nunito font-black text-2xl tracking-wide"
@@ -33,7 +49,7 @@ function ProjectCard({ project }) {
           </div>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 }
 
