@@ -53,7 +53,7 @@ function Certifications() {
            initial={{ opacity:0, scale:0.8 }} whileInView={{ opacity:1, scale:1 ,transition:{type:'spring',duration:0.4}}}
            viewport={{once:"true"}}
             key={index}
-            className="w-[90vw] md:w-90 md:h-90 relative group overflow-hidden rounded-xl shadow-md cursor-pointer"
+            className="w-[80vw] md:w-80 md:h-80 relative group overflow-hidden rounded-bl-2xl rounded-tr-2xl shadow-md cursor-pointer"
              onClick={() => handleToggle(index)}
           >
             <div className="w-full h-[70%] overflow-hidden">
@@ -76,7 +76,7 @@ function Certifications() {
                 {item.company}
               </h3>
               <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 ">
-                <h4 className="font-nunito text-sm font-semibold text-white/90">
+                <h4 className="font-nunito text-sm font-semibold text-white/80">
                   {item.title}
                 </h4>
                 <span className="text-xs text-white/60 font-nunito">
@@ -89,7 +89,7 @@ function Certifications() {
               </h3>
 
               <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5">
-                <h4 className="font-nunito text-sm font-semibold text-white/90">
+                <h4 className="font-nunito text-sm font-semibold text-white/80">
                   {item.title}
                 </h4>
                 <span className="text-xs text-white/60 font-nunito">

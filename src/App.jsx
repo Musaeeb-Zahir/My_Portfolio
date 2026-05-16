@@ -15,8 +15,8 @@ function App() {
       <ProjectContainer />
       <Skills />
       <Education />
-      <Experience/>
       <Certifications/>
+      <Experience/>
       <About/>
       <Contact/>
       <Footer/> 

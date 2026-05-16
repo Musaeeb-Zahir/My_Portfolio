@@ -45,7 +45,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true, margin: "-100px" }}
-       className="max-w-4xl mx-auto">
+       className="max-w-5xl mx-auto">
         <p className="text-xs tracking-widest uppercase text-gray-500 font-bold mb-1 font-nunito">
           Get To Know Me
         </p>

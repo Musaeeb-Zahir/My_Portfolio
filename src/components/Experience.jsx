@@ -33,7 +33,7 @@ const experiences = [
 export default function Experience() {
   return (
     <section className="w-full py-16 px-4 bg-primary">
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         
         <p className="text-xs tracking-widest uppercase text-gray-500 mb-1 font-nunito">
           Work History
@@ -48,7 +48,7 @@ export default function Experience() {
           {experiences.map((item, index) => (
             <motion.article 
             initial={{ opacity:0, x:-60 }} whileInView={{ opacity:1, x:0 }} transition={{ staggerChildren:0.9 }}
-            viewport={{once:"ture"}}
+            viewport={{once:"true"}}
             key={index} className="relative mb-10 last:mb-0">
               
               <div
