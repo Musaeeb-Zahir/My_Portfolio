@@ -1,6 +1,6 @@
 import React from "react";
 import { LuArrowUpRight } from "react-icons/lu";
-
+import {motion} from "motion/react"
 const experiences = [
   {
     company: "DeveloperHub Corporation",
@@ -19,7 +19,7 @@ const experiences = [
     company: "Saylani Mass IT Training",
     role: "MERN Stack Trainee",
     type: "In progress · Training",
-    location: "Islamabad",
+    location: "Rawalpindi",
     duration: "Dec 2025 – Aug 2026",
     description:
       "Learning to build complete web applications using the MERN stack. Working on practical projects focused on performance, responsiveness, and real-world problem solving.",
@@ -46,7 +46,9 @@ export default function Experience() {
           <div className="absolute left-[6px] top-2 bottom-2 w-[1.5px] bg-slate-700" />
 
           {experiences.map((item, index) => (
-            <article key={index} className="relative mb-10 last:mb-0">
+            <motion.article 
+            initial={{ opacity:0, x:-60 }} whileInView={{ opacity:1, x:0 }} transition={{ staggerChildren:0.9 }}
+            key={index} className="relative mb-10 last:mb-0">
               
               <div
                 className="absolute -left-7 top-1.5 w-3.5 h-3.5 rounded-full bg-slate-50 border-2 flex items-center justify-center"
@@ -122,7 +124,7 @@ export default function Experience() {
               {index < experiences.length - 1 && (
                 <div className="mt-8 h-px bg-gray-200" />
               )}
-            </article>
+            </motion.article>
           ))}
         </div>
       </div>
