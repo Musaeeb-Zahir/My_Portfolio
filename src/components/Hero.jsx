@@ -125,7 +125,7 @@ function Hero() {
           <FaWhatsapp className="text-white text-3xl" />
         </span>
 
-        <span className="absolute right-16 bottom-3 bg-white text-gray-600 text-xs font-medium px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-300 shadow-sm border border-gray-100">
+        <span className="hidden md:block absolute right-16 bottom-3 bg-white text-gray-600 text-xs font-medium px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-300 shadow-sm border border-gray-100">
           Chat with me
         </span>
       </a>
@@ -161,7 +161,7 @@ function Hero() {
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 ,duration:0.4 }}
+          transition={{ delay: 0.3, duration: 0.4 }}
           className="text-sm text-white font-nunito italic md:text-[16px] "
         >
           Junior Web Developer React | JS | Tailwind | Redux
@@ -177,8 +177,8 @@ function Hero() {
         </div>
       </div>
       <motion.img
-       animate={{ y:[0,-6,0] }} transition={{ repeat:Infinity, duration:2, 
-        ease:"easeInOut" }}
+        animate={{ y: [0, -6, 0] }}
+        transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
         src={myLogo}
         alt="logo"
         style={{ width: "400px", height: "400px" }}
