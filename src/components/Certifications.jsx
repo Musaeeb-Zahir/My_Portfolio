@@ -27,10 +27,10 @@ function Certifications() {
   const handleToggle = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
-   
+
   return (
     <section className="flex flex-col items-center py-10 w-full bg-primary relative">
-     
+
         <motion.h2
         initial={{ y: -10, opacity: 0, scale: 0.8 }}
         whileInView={{
@@ -51,13 +51,13 @@ function Certifications() {
           const isActive = activeIndex === index;
         return  <motion.article
            initial={{ opacity:0, scale:0.8 }} whileInView={{ opacity:1, scale:1 ,transition:{type:'spring',duration:0.4}}}
-          //  viewport={{once:"true"}}
+           viewport={{once:"true"}}
             key={index}
             className="w-[90vw] md:w-90 md:h-90 relative group overflow-hidden rounded-xl shadow-md cursor-pointer"
              onClick={() => handleToggle(index)}
           >
             <div className="w-full h-[70%] overflow-hidden">
-              <img  
+              <img
                 src={item.img}
                 alt={`${item.company} certificate`}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
