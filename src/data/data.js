@@ -8,7 +8,7 @@ export const projects = [
     title: "Aksify",
     img: project1,
     discription:
-      "Built Aksify, an image discovery app with React, Redux Toolkit, and Unsplash API for photo search and downloads, featuring a responsive Tailwind CSS UI and localStorage authentication.",
+      "Built a responsive image discovery app using React, Redux, and Tailwind. Integrated Unsplash API for photo search and downloads, with localStorage authentication.",
     tools: [
       "#react",
       "#tailwind",
@@ -43,7 +43,7 @@ export const projects = [
     title: "Music Player",
     img: project3,
     discription:
-      "Built an intermediate-level player that loads all song data dynamically from a JSON file.Used JavaScript Audio API to create custom logic for play, pause, and real-time progress tracking.Designed responsive and optimized UI for all screen sizes.",
+      "Built a responsive music player that loads song data dynamically from a JSON file. Used JavaScript Audio API for custom play, pause, and real-time progress tracking",
     tools: ["#html", "#css", "#javascript"],
     link: "https://bgplayer.vercel.app/",
     themeColor: "#271843",
