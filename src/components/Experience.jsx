@@ -48,6 +48,7 @@ export default function Experience() {
           {experiences.map((item, index) => (
             <motion.article 
             initial={{ opacity:0, x:-60 }} whileInView={{ opacity:1, x:0 }} transition={{ staggerChildren:0.9 }}
+            viewport={{once:"ture"}}
             key={index} className="relative mb-10 last:mb-0">
               
               <div
