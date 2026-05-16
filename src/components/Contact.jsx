@@ -1,10 +1,15 @@
 import { FaPaperPlane } from "react-icons/fa";
 import contact from "../assets/contact/contact.svg";
-
+import {motion} from "motion/react"
 export default function Contact() {
   return (
     <section className="w-full py-16 px-4 bg-[#FFFFFF]" id="contact">
-      <div className="max-w-5xl mx-auto">
+      <motion.div
+       initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, margin: "-100px" }}
+      className="max-w-5xl mx-auto">
         <div className="text-center md:text-left mb-10">
           <p className="text-xs tracking-widest uppercase text-gray-600 font-bold mb-1 font-nunito">
             Get In Touch
@@ -86,7 +91,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="mt-2 w-full text-white font-bold py-3.5 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex justify-center items-center gap-2"
+                className="mt-2 w-full text-white font-bold py-3.5 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex justify-center items-center gap-2 cursor-pointer"
                 style={{ backgroundColor: "#0873B9" }}
                 onMouseEnter={(e) =>
                   (e.target.style.backgroundColor = "#091841")
@@ -101,7 +106,7 @@ export default function Contact() {
             </form>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
