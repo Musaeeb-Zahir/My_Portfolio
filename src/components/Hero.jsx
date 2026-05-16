@@ -177,7 +177,7 @@ function Hero() {
         </div>
       </div>
       <motion.img
-       animate={{ y:[0,-10,0] }} transition={{ repeat:Infinity, duration:2, 
+       animate={{ y:[0,-6,0] }} transition={{ repeat:Infinity, duration:2, 
         ease:"easeInOut" }}
         src={myLogo}
         alt="logo"
